@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Audit.EntityFramework" Version="20.2.3" />
+    <PackageReference Include="Audit.NET.SqlServer" Version="20.2.3" />
+    <PackageReference Include="Audit.WebApi" Version="20.2.3" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.410601" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="8.0.0-preview.2.23128.3" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.6.0-preview3.19128.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Medik.Core\Medik.Core.csproj" />
+    <ProjectReference Include="..\Medik.DalLayer\Medik.DalLayer.csproj" />
+    <ProjectReference Include="..\Medik.Security\Medik.Security.csproj" />
+    <ProjectReference Include="..\Medik.ServerModel\Medik.ServerModel.csproj" />
+  </ItemGroup>
+
+</Project>

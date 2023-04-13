@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-WebApplication5-12044c1f-69f4-4bf0-bed4-148dbca581f5</UserSecretsId>
+    <StartupObject></StartupObject>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Compile Remove="logs\**" />
+    <Compile Remove="Views\Shared\**" />
+    <Content Remove="Areas\**" />
+    <Content Remove="logs\**" />
+    <Content Remove="Views\Shared\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <EmbeddedResource Remove="Views\Shared\**" />
+    <None Remove="Areas\**" />
+    <None Remove="logs\**" />
+    <None Remove="Views\Shared\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\_ViewImports.cshtml" />
+    <Content Remove="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+ 
+ 
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+    <PackageReference Include="Google.Apis" Version="1.60.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.60.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.59.0.2964" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Graph" Version="5.4.0" />
+    <PackageReference Include="OfficeOpenXml.Extends" Version="1.0.6" />
+    <PackageReference Include="RefactorThis.GraphDiff" Version="3.1.3" />
+    <PackageReference Include="SendGrid" Version="9.28.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\ChangePassword.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Account\ChangePassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\ErrorPage.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\ForgotPassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\LicenseExpired.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\Login.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\PageNotFound.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Account\UnAuthorizeAccess.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\AppMain.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\ErrorPage.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\ForgotPassword.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\LicenseExpired.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\Login.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\PageNotFound.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Account\UnAuthorizeAccess.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\AppMain.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Medik.AccTransfer\Medik.AccTransfer.csproj" />
+    <ProjectReference Include="..\Medik.Core\Medik.Core.csproj" />
+    <ProjectReference Include="..\Medik.DalLayer\Medik.DalLayer.csproj" />
+    <ProjectReference Include="..\Medik.Security\Medik.Security.csproj" />
+    <ProjectReference Include="..\Medik.ServerModel\Medik.ServerModel.csproj" />
+    <ProjectReference Include="..\Medik.Sync\Medik.Sync.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\.nuget\packages\itextsharp\5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

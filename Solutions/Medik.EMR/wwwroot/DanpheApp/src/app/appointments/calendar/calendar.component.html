@@ -1,0 +1,78 @@
+<style>
+
+div#calendar { width: 80vw; table-layout: fixed; }
+table.fc-border-separate td > div { height: 60px; }
+div#cols { width: 80vw; padding: 11px 0px; }
+div#cols label {
+    display: inline-block; position: relative;
+    padding: 0px 4px; width: calc((80vw / 7) - 4px);
+}
+div#cols label:not(:last-child)::after {
+    content: ''; display: block; position: absolute; 
+    top: -50%; right: 0;
+    border-right: 1px solid #eae1e1; height: 200%; width: 1px;
+}
+
+div#rows { 
+    position: absolute; top: 72px; right: 8px; 
+    width: 15%; height: auto;
+}
+div#rows label {
+    box-sizing: border-box; display: block; 
+    padding: 0px 4px; height: 68px;
+}
+div#rows label:not(:last-child) { border-bottom: 1px solid #eae1e1; }
+
+</style>
+<!-- only appointments from 9:00 to 18:00 are displayed, and the time axis from 19:00 to 8:00 is not displayed.*/ -->
+
+<div class="wrapper">
+    <div class="row">
+        <label class="control-label col-md-3">Doctor<b>:</b></label>
+        <div class="col-md-3">
+          <input class="form-control" danphe-auto-complete
+                [ngClass]="!ApptToAdd.IsValidSelProvider? 'bg-on' : 'bg-off'"
+                [ngModelOptions]="{standalone: true}"
+                [(ngModel)]="selectedDoctor"
+                [list-formatter]="DocListFormatter"
+                [source]="filteredDocList"
+                placeholder="Doctor's Name"
+                display-property-name="ProviderName"
+                (focusout)="AssignSelectedDoctor()"
+                onClick="this.select()"
+                (focus)="AssignSelectedDoctor()"
+                max-num-list="10" />
+          <!--<span class="color-red font-sm" *ngIf="visit.IsDirty('Doctor')" [hidden]="visit.IsValidCheck('Doctor','required')">Doctor is mandatory.</span>--> 
+          <span class="color-red" *ngIf="!ApptToAdd.IsValidSelProvider" [hidden]="ApptToAdd.IsValidSelProvider">Select doctor from the list.</span> </div>
+      </div>    
+    <div *ngIf="calendarVisible" >
+      <full-calendar defaultView="timeGridDay" 
+        [header]="{ left: 'prev,next today', center: 'title',  right: 'timeGridDay,timeGridWeek,dayGridMonth,listDay'}"  
+        [plugins]="calendarPlugins"
+        selectMirror="true"
+        [weekends]="false"
+        deepChangeDetection="true"
+        aspectRatio="1.0"
+        minTime="08:00:00"
+        maxTime="20:00:00"
+        editable="true"
+        selectable="true"
+        draggable="true"
+
+        themeSystem="bootstrap"
+        [events]="currentEvents"
+        (eventClick)="changeEvent($event)"
+        (dateClick)="handleDateSelect($event)"
+        (dayRender)="handleEvents"
+        (eventRender)="eventRender($event)"
+      ></full-calendar>
+  </div>
+  <app-booking-appointment
+      *ngIf="showApptPanel" 
+      (app-bookpat-callback)="AppCallBack($event)"   
+      [appt-to-add]="ApptToAdd"
+      [appt-to-update]="ApptToUpdate"
+      
+      >
+  </app-booking-appointment>
+</div>
