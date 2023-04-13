@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.Web", "Medik.EMR\Medik.Web.csproj", "{A9A3BB9B-A70D-4DBF-A6D3-5BDACB72C8E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD185860-62BB-4F5C-9B5D-6943BB9B39EE}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.AccTransfer", "Medik.AccTransfer\Medik.AccTransfer.csproj", "{24E40A69-37BE-4B49-B89A-C0118DDEA804}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.Core", "Medik.Core\Medik.Core.csproj", "{EEDAC5AA-A6ED-4842-8F15-DC63A8B9DA5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.DalLayer", "Medik.DalLayer\Medik.DalLayer.csproj", "{580A8DEC-A31C-49B3-BDEE-CC76A77594C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.Jobs", "Medik.Jobs\Medik.Jobs.csproj", "{7375F4FF-6E86-48AD-B724-2347CCDB78CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.Security", "Medik.Security\Medik.Security.csproj", "{F55E3B16-F603-4288-94A6-A87BDEE2D02F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.ServerModel", "Medik.ServerModel\Medik.ServerModel.csproj", "{713C3607-3EFC-4791-A7B1-95E65E55D673}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medik.Sync", "Medik.Sync\Medik.Sync.csproj", "{05789BF3-C42D-4B2C-B090-9E16ADD96FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSidePrinter", "ServerSidePrinter\ServerSidePrinter.csproj", "{451B7518-7EAC-400A-92CC-5AC99A4FE5F1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DanpheApp(1)", "Medik.EMR\wwwroot\DanpheApp\", "{DEB1F34A-F77D-48C9-9E3A-6FEBA2671CA7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56597"
+		Debug.AspNetCompiler.PhysicalPath = "Medik.EMR\wwwroot\DanpheApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56597\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56597"
+		Release.AspNetCompiler.PhysicalPath = "Medik.EMR\wwwroot\DanpheApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56597\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56597"
+		SlnRelativePath = "Medik.EMR\wwwroot\DanpheApp\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ReferncedDLLs", "..\ReferncedDLLs\", "{487369EA-2C19-473E-B3A5-A7E259720585}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58424"
+		Debug.AspNetCompiler.PhysicalPath = "..\ReferncedDLLs\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58424\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58424"
+		Release.AspNetCompiler.PhysicalPath = "..\ReferncedDLLs\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58424\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58424"
+		SlnRelativePath = "..\ReferncedDLLs\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9A3BB9B-A70D-4DBF-A6D3-5BDACB72C8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A3BB9B-A70D-4DBF-A6D3-5BDACB72C8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A3BB9B-A70D-4DBF-A6D3-5BDACB72C8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A3BB9B-A70D-4DBF-A6D3-5BDACB72C8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24E40A69-37BE-4B49-B89A-C0118DDEA804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24E40A69-37BE-4B49-B89A-C0118DDEA804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24E40A69-37BE-4B49-B89A-C0118DDEA804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24E40A69-37BE-4B49-B89A-C0118DDEA804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDAC5AA-A6ED-4842-8F15-DC63A8B9DA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDAC5AA-A6ED-4842-8F15-DC63A8B9DA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDAC5AA-A6ED-4842-8F15-DC63A8B9DA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDAC5AA-A6ED-4842-8F15-DC63A8B9DA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580A8DEC-A31C-49B3-BDEE-CC76A77594C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580A8DEC-A31C-49B3-BDEE-CC76A77594C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580A8DEC-A31C-49B3-BDEE-CC76A77594C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580A8DEC-A31C-49B3-BDEE-CC76A77594C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7375F4FF-6E86-48AD-B724-2347CCDB78CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7375F4FF-6E86-48AD-B724-2347CCDB78CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7375F4FF-6E86-48AD-B724-2347CCDB78CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7375F4FF-6E86-48AD-B724-2347CCDB78CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55E3B16-F603-4288-94A6-A87BDEE2D02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55E3B16-F603-4288-94A6-A87BDEE2D02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55E3B16-F603-4288-94A6-A87BDEE2D02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55E3B16-F603-4288-94A6-A87BDEE2D02F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713C3607-3EFC-4791-A7B1-95E65E55D673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713C3607-3EFC-4791-A7B1-95E65E55D673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713C3607-3EFC-4791-A7B1-95E65E55D673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713C3607-3EFC-4791-A7B1-95E65E55D673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05789BF3-C42D-4B2C-B090-9E16ADD96FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05789BF3-C42D-4B2C-B090-9E16ADD96FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05789BF3-C42D-4B2C-B090-9E16ADD96FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05789BF3-C42D-4B2C-B090-9E16ADD96FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451B7518-7EAC-400A-92CC-5AC99A4FE5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451B7518-7EAC-400A-92CC-5AC99A4FE5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451B7518-7EAC-400A-92CC-5AC99A4FE5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451B7518-7EAC-400A-92CC-5AC99A4FE5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB1F34A-F77D-48C9-9E3A-6FEBA2671CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB1F34A-F77D-48C9-9E3A-6FEBA2671CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB1F34A-F77D-48C9-9E3A-6FEBA2671CA7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB1F34A-F77D-48C9-9E3A-6FEBA2671CA7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{487369EA-2C19-473E-B3A5-A7E259720585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487369EA-2C19-473E-B3A5-A7E259720585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487369EA-2C19-473E-B3A5-A7E259720585}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{487369EA-2C19-473E-B3A5-A7E259720585}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {950002BF-B1FE-4D2E-9C88-C82FCBCE7F33}
+	EndGlobalSection
+EndGlobal
