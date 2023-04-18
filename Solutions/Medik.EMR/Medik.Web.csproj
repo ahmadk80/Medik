@@ -108,7 +108,7 @@
 
   <ItemGroup>
     <Reference Include="itextsharp">
-      <HintPath>..\..\..\..\..\.nuget\packages\itextsharp\5.5.13\lib\itextsharp.dll</HintPath>
+      <HintPath>bin\itextsharp.dll</HintPath>
     </Reference>
   </ItemGroup>
 
